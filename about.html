@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <meta content="width=device-width, initial-scale=1.0" name="viewport">
+                <title>
+                    About Us - Green Planet Conservation
+                </title>
+                <link href="css/styles.css" rel="stylesheet">
+                </link>
+            </meta>
+        </meta>
+    </head>
+    <body>
+        <!-- Header -->
+        <div id="header-container">
+        </div>
+        <!-- Main content -->
+        <main>
+            <!-- About Us -->
+            <section class="about">
+                <h1>
+                    About Us
+                </h1>
+                <p>
+                    Green Planet Conservation is a nonprofit organization dedicated to preserving our environment and promoting sustainable living. Our mission is to protect our planet's natural resources and ecosystems, advocate for responsible policies, and educate the public on the importance of environmental conservation.
+                </p>
+            </section>
+            <!-- Our Mission -->
+            <section class="mission">
+                <h2>
+                    Our Mission
+                </h2>
+                <p>
+                    Our mission is to inspire change in our communities and across the globe by promoting environmental conservation and sustainable living practices. We believe that by working together, we can ensure a greener and healthier planet for future generations.
+                </p>
+            </section>
+            <!-- Our History -->
+            <section class="history">
+                <h2>
+                    Our History
+                </h2>
+                <p>
+                    Green Planet Conservation was founded in 2010 by a group of passionate environmentalists who saw the need for a grassroots organization dedicated to protecting our planet. Since then, we have grown into a global movement with thousands of members and volunteers working tirelessly to preserve our environment and promote sustainable living.
+                </p>
+            </section>
+            <!-- Our Team -->
+            <section class="team">
+                <h2>
+                    Our Team
+                </h2>
+                <p>
+                    Our dedicated team of staff and volunteers are the driving force behind our organization's success. Meet some of our key team members:
+                </p>
+                <ul>
+                    <li>
+                        Jane Doe - Executive Director
+                    </li>
+                    <li>
+                        John Smith - Program Manager
+                    </li>
+                    <li>
+                        Mary Johnson - Communications Coordinator
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <!-- Footer -->
+        <div id="footer-container">
+        </div>
+        <script>
+            function loadHeaderFooter() {
+        // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(header => {
+                document.querySelector('#header-container').innerHTML = header;
+            });
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(footer => {
+                document.querySelector('#footer-container').innerHTML = footer;
+            });
+    }
+
+    document.addEventListener('DOMContentLoaded', loadHeaderFooter);
+        </script>
+    </body>
+</html>

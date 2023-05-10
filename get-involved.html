@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <meta content="width=device-width, initial-scale=1.0" name="viewport">
+                <title>
+                    Get Involved - Green Planet Conservation
+                </title>
+                <link href="css/styles.css" rel="stylesheet">
+                </link>
+            </meta>
+        </meta>
+    </head>
+    <body>
+        <!-- Header -->
+        <div id="header-container">
+        </div>
+        <!-- Main content -->
+        <main>
+            <!-- Get Involved -->
+            <section class="get-involved">
+                <h1>
+                    Get Involved
+                </h1>
+                <p>
+                    There are many ways to get involved with Green Planet Conservation and support our mission to protect the environment. Explore the opportunities below and join us in making a positive impact on our planet:
+                </p>
+            </section>
+            <!-- Volunteer -->
+            <section class="volunteer">
+                <h2>
+                    Volunteer
+                </h2>
+                <p>
+                    Volunteering is a great way to contribute your time and skills to our cause. We offer various volunteer opportunities, including event support, office assistance, and program-specific roles. Fill out our
+                    <a href="volunteer-form.html">
+                        Volunteer Interest Form
+                    </a>
+                    to get started!
+                </p>
+            </section>
+            <!-- Donate -->
+            <section class="donate">
+                <h2>
+                    Donate
+                </h2>
+                <p>
+                    Your financial support is crucial to the success of our programs and initiatives. Make a one-time or recurring donation to help fund our conservation efforts.
+                    <a href="donate.html">
+                        Donate now
+                    </a>
+                    and make a difference!
+                </p>
+            </section>
+            <!-- Become a Member -->
+            <section class="membership">
+                <h2>
+                    Become a Member
+                </h2>
+                <p>
+                    By becoming a member of Green Planet Conservation, you join a community of like-minded individuals committed to environmental conservation. Members receive exclusive benefits, including newsletters, event invitations, and discounts on merchandise.
+                    <a href="membership.html">
+                        Join us today!
+                    </a>
+                </p>
+            </section>
+            <!-- Partner with Us -->
+            <section class="partnerships">
+                <h2>
+                    Partner with Us
+                </h2>
+                <p>
+                    We welcome partnerships with businesses, organizations, and educational institutions that share our commitment to environmental conservation. Partner with us to create a greener future together.
+                    <a href="contact.html">
+                        Contact us
+                    </a>
+                    to explore partnership opportunities.
+                </p>
+            </section>
+        </main>
+        <!-- Footer -->
+        <div id="footer-container">
+        </div>
+        <script>
+            function loadHeaderFooter() {
+        // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(header => {
+                document.querySelector('#header-container').innerHTML = header;
+            });
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(footer => {
+                document.querySelector('#footer-container').innerHTML = footer;
+            });
+    }
+
+    document.addEventListener('DOMContentLoaded', loadHeaderFooter);
+        </script>
+    </body>
+</html>

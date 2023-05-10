@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <meta content="width=device-width, initial-scale=1.0" name="viewport">
+                <title>
+                    Donate - Green Planet Conservation
+                </title>
+                <link href="css/styles.css" rel="stylesheet">
+                </link>
+            </meta>
+        </meta>
+    </head>
+    <body>
+        <!-- Header -->
+        <!-- Header -->
+        <div id="header-container">
+        </div>
+        <!-- Main content -->
+        <main>
+            <!-- Donate -->
+            <section class="donate">
+                <h1>
+                    Donate
+                </h1>
+                <p>
+                    Your support is crucial to our mission of promoting environmental conservation and sustainable living. Your donations help fund our programs, research, and advocacy efforts. There are several ways to donate to Green Planet Conservation:
+                </p>
+            </section>
+            <!-- Donation Form -->
+            <section class="donation-form">
+                <h2>
+                    Online Donation
+                </h2>
+                <p>
+                    Use our secure online donation form to make a one-time or recurring donation:
+                </p>
+                <form action="process-donation.php" method="post">
+                    <label for="name">
+                        Name:
+                    </label>
+                    <input id="name" name="name" required="" type="text">
+                        <label for="email">
+                            Email:
+                        </label>
+                        <input id="email" name="email" required="" type="email">
+                            <label for="amount">
+                                Donation Amount:
+                            </label>
+                            <input id="amount" min="1" name="amount" required="" step="0.01" type="number">
+                                <label for="frequency">
+                                    Donation Frequency:
+                                </label>
+                                <select id="frequency" name="frequency" required="">
+                                    <option value="one-time">
+                                        One-time
+                                    </option>
+                                    <option value="monthly">
+                                        Monthly
+                                    </option>
+                                    <option value="annual">
+                                        Annual
+                                    </option>
+                                </select>
+                                <!-- Replace with your payment processor's integration code -->
+                                <p>
+                                    Payment information will be collected on the next page.
+                                </p>
+                                <button type="submit">
+                                    Donate
+                                </button>
+                            </input>
+                        </input>
+                    </input>
+                </form>
+            </section>
+            <!-- Other Ways to Donate -->
+            <section class="other-ways">
+                <h2>
+                    Other Ways to Donate
+                </h2>
+                <p>
+                    There are several other ways you can support our cause:
+                </p>
+                <ul>
+                    <li>
+                        <strong>
+                            Mail a check:
+                        </strong>
+                        Send a check payable to "Green Planet Conservation" to 123 Green Street, City, State, ZIP.
+                    </li>
+                    <li>
+                        <strong>
+                            Planned Giving:
+                        </strong>
+                        Include Green Planet Conservation in your estate planning to leave a lasting legacy.
+                    </li>
+                    <li>
+                        <strong>
+                            Workplace Giving:
+                        </strong>
+                        Many employers offer matching gift programs or payroll deductions for charitable donations. Check with your employer for more information.
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <!-- Footer -->
+        <div id="footer-container">
+        </div>
+        <script>
+            function loadHeaderFooter() {
+        // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(header => {
+                document.querySelector('#header-container').innerHTML = header;
+            });
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(footer => {
+                document.querySelector('#footer-container').innerHTML = footer;
+            });
+    }
+
+    document.addEventListener('DOMContentLoaded', loadHeaderFooter);
+        </script>
+    </body>
+</html>

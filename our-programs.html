@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Programs - Green Planet Conservation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+ <div id="header-container"></div>
+
+
+    <!-- Main content -->
+    <main>
+        <!-- Our Programs -->
+        <section class="programs">
+            <h1>Our Programs</h1>
+            <p>At Green Planet Conservation, we offer a variety of programs aimed at promoting environmental conservation and sustainable living. Learn more about each of our programs below:</p>
+        </section>
+
+        <!-- Program 1 -->
+        <section class="program">
+            <h2>Forest Restoration</h2>
+            <p>Our Forest Restoration program focuses on rehabilitating damaged forests, promoting reforestation, and preserving biodiversity. We work with local communities and partners to plant trees, remove invasive species, and protect wildlife habitats.</p>
+        </section>
+
+        <!-- Program 2 -->
+        <section class="program">
+            <h2>Ocean Cleanup</h2>
+            <p>Our Ocean Cleanup program aims to reduce plastic pollution in our oceans by organizing beach cleanups, raising awareness about the impacts of plastic waste, and supporting the development of innovative solutions for plastic removal and recycling.</p>
+        </section>
+
+        <!-- Program 3 -->
+        <section class="program">
+            <h2>Sustainable Communities</h2>
+            <p>The Sustainable Communities program works to create environmentally friendly, resilient, and healthy communities by promoting eco-friendly practices, supporting local food systems, and advocating for sustainable development policies.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+       <div id="footer-container"></div>
+<script>
+            function loadHeaderFooter() {
+        // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(header => {
+                document.querySelector('#header-container').innerHTML = header;
+            });
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(footer => {
+                document.querySelector('#footer-container').innerHTML = footer;
+            });
+    }
+
+    document.addEventListener('DOMContentLoaded', loadHeaderFooter);
+        </script>
+</body>
+</html>
