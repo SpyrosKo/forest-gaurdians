@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events - Green Planet Conservation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+   <div id="header-container"></div>
+
+
+    <!-- Main content -->
+    <main>
+        <!-- Upcoming Events -->
+        <section class="upcoming-events">
+            <h1>Upcoming Events</h1>
+            <p>Join us at our upcoming events to support our environmental conservation efforts and make a positive impact on our planet:</p>
+        </section>
+
+        <!-- Event 1 -->
+        <section class="event">
+            <h2>Beach Cleanup Day</h2>
+            <p>Date: June 10, 2023</p>
+            <p>Location: Sunny Beach</p>
+            <p>Join us for our annual Beach Cleanup Day and help remove plastic waste from our beautiful coastline. Meet fellow volunteers and learn more about our Ocean Cleanup program. Bring gloves, reusable bags, and plenty of sunscreen!</p>
+        </section>
+
+        <!-- Event 2 -->
+        <section class="event">
+            <h2>Annual Fundraising Gala</h2>
+            <p>Date: September 15, 2023</p>
+            <p>Location: Grand Ballroom, City Hotel</p>
+            <p>Our Annual Fundraising Gala is an evening of celebration and support for our environmental conservation programs. Enjoy a gourmet dinner, live music, and silent auction while connecting with fellow supporters and our team members. Tickets are available for purchase now.</p>
+        </section>
+
+        <!-- Event 3 -->
+        <section class="event">
+            <h2>Environmental Education Workshop</h2>
+            <p>Date: November 4, 2023</p>
+            <p>Location: Community Center, Green Park</p>
+            <p>Attend our Environmental Education Workshop to learn about sustainable living practices, recycling, and energy conservation. This family-friendly event includes hands-on activities, presentations from experts, and resources to help you live a more eco-friendly lifestyle.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+         <div id="footer-container"></div>
+<script>
+            function loadHeaderFooter() {
+        // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(header => {
+                document.querySelector('#header-container').innerHTML = header;
+            });
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(footer => {
+                document.querySelector('#footer-container').innerHTML = footer;
+            });
+    }
+
+    document.addEventListener('DOMContentLoaded', loadHeaderFooter);
+        </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+// Define base font size and line height
+$base-font-size: 16px;
+$base-line-height: 1.618;
+
+// Define a function to calculate the golden ratio for font sizes
+@function golden-ratio($size, $iterations: 1) {
+  @for $i from 1 through $iterations {
+    $size: $size * 1.618;
+  }
+
+  @return $size;
+}
+
+// Apply base font size and line height to body
+body {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+// Define and apply heading styles
+h1 {
+  font-size: golden-ratio($base-font-size, 4);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: golden-ratio($base-font-size, 3);
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: golden-ratio($base-font-size, 2);
+  line-height: 1.3;
+}
+
+h4 {
+  font-size: golden-ratio($base-font-size, 1);
+  line-height: 1.3;
+}
+
+h5 {
+  font-size: $base-font-size;
+  line-height: 1.4;
+}
+
+h6 {
+  font-size: $base-font-size / 1.618;
+  line-height: 1.4;
+}
+
+// Other typography styles
+p {
+  margin-bottom: $base-font-size;
+}

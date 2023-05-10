@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <meta content="width=device-width, initial-scale=1.0" name="viewport">
+                <title>
+                    Green Planet Conservation
+                </title>
+                <link href="css/styles.css" rel="stylesheet">
+                </link>
+            </meta>
+        </meta>
+    </head>
+    <body>
+        <!-- Header -->
+        <div id="header-container">
+        </div>
+        <h1>I am</h1>
+        <!-- Main content -->
+        <main>
+            <!-- Banner -->
+            <section class="banner">
+                <h1>
+                    Welcome to Green Planet Conservation
+                </h1>
+                <p>
+                    Protecting our environment for future generations
+                </p>
+            </section>
+            <!-- About Us -->
+            <section class="about">
+                <h2>
+                    About Us
+                </h2>
+                <p>
+                    Green Planet Conservation is a nonprofit organization dedicated to preserving our environment and promoting sustainable living. Our mission is to protect our planet's natural resources and ecosystems, advocate for responsible policies, and educate the public on the importance of environmental conservation.
+                </p>
+            </section>
+            <!-- Our Programs -->
+            <section class="programs">
+                <h2>
+                    Our Programs
+                </h2>
+                <p>
+                    Learn more about our programs and how they help protect the environment:
+                </p>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Forest Restoration
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Ocean Cleanup
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Sustainable Communities
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- Events -->
+            <section class="events">
+                <h2>
+                    Upcoming Events
+                </h2>
+                <p>
+                    Join us at our upcoming events and support our environmental conservation efforts:
+                </p>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Beach Cleanup Day
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Annual Fundraising Gala
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Environmental Education Workshop
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- Get Involved -->
+            <section class="get-involved">
+                <h2>
+                    Get Involved
+                </h2>
+                <p>
+                    Find out how you can help support our mission by volunteering, donating, or becoming a member:
+                </p>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Volunteer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Donate
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Become a Member
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <!-- Footer -->
+        <div id="footer-container">
+        </div>
+        <script>
+            function loadHeaderFooter() {
+        // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(header => {
+                document.querySelector('#header-container').innerHTML = header;
+            });
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(footer => {
+                document.querySelector('#footer-container').innerHTML = footer;
+            });
+    }
+
+    document.addEventListener('DOMContentLoaded', loadHeaderFooter);
+        </script>
+    </body>
+</html>

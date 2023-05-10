@@ -1,0 +1,122 @@
+/* Reset margins and paddings */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+figcaption,
+address,
+menu,
+nav,
+output,
+pre,
+progress,
+video,
+audio,
+canvas,
+sub,
+sup,
+button,
+input,
+label,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list-style */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Reset font-size and line-height */
+html {
+  font-size: 100%;
+  line-height: 1.15;
+}
+
+/* Set border-box box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset text formatting */
+body {
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Reset anchor styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset button styles */
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Reset input, select, and textarea styles */
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  background: transparent;
+  border: none;
+}
+
+/* Reset table styles */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Reset image styles */
+img {
+  max-width: 100%;
+  height: auto;
+  border-style: none;
+}
+
+/* Reset quote styles */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}

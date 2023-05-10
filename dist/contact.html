@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Green Planet Conservation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-container"></div>
+
+
+    <!-- Main content -->
+    <main>
+        <!-- Contact Us -->
+        <section class="contact">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or comments about our organization or programs, please feel free to contact us using the information below or by submitting the contact form:</p>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: info@greenplanetconservation.org</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Address: 123 Green Street, City, State, ZIP</p>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="submit-form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+        <div id="footer-container"></div>
+<script>
+            function loadHeaderFooter() {
+        // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(header => {
+                document.querySelector('#header-container').innerHTML = header;
+            });
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(footer => {
+                document.querySelector('#footer-container').innerHTML = footer;
+            });
+    }
+
+    document.addEventListener('DOMContentLoaded', loadHeaderFooter);
+        </script>
+</body>
+</html>
